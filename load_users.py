@@ -1,7 +1,7 @@
 import sys, os
 import pandas as pd
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "winerama.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "sommelier.settings")
 
 import django
 django.setup()
