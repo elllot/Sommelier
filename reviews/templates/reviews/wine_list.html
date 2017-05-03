@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h2>Wine list</h2>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-xs-6 col-lg-4">
+        <a href="{% url 'reviews:wine_add' %}"><h4><u>Add a Wine</u></h4></a>
+    </div>
+</div>
+{% if wine_list %}
+<div class="row">
+    {% for wine in wine_list %}
+    <div class="col-xs-6 col-lg-4">
+        <h4><a href="{% url 'reviews:wine_detail' wine.id %}">
+        {{ wine.name }}
+        </a></h4>
+        <h5>{{ wine.review_set.count }} reviews</h5>
+        {% if wine.average_rating >= 4.0 %}
+            <h5 class="bg-success">{{ wine.average_rating | floatformat }} average rating</h5>
+        {% elif wine.average_rating >= 3.0 %}
+            <h5 class="bg-warning">{{ wine.average_rating | floatformat }} average rating</h5>
+        {% else %}
+            <h5 class="bg-danger">{{ wine.average_rating | floatformat }} average rating</h5>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+    <p>No wines are available.</p>
+{% endif %}
+{% endblock %}
