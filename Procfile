@@ -1,1 +1,1 @@
-web: gunicorn Sommelier.wsgi
+web: gunicorn sommelier.wsgi
