@@ -1,6 +1,4 @@
-alabaster==0.7.9
 argcomplete==1.0.0
-astroid==1.4.7
 Babel==2.3.4
 beautifulsoup4==4.5.1
 certifi==2017.4.17
@@ -35,3 +33,4 @@ scikit-learn==0.19.0
 urllib3==1.21
 w3lib==1.17.0
 Werkzeug==0.12.2
+dj-database-url==0.4.2
