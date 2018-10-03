@@ -18,6 +18,8 @@ urlpatterns = [
 	url(r'^review/user/$', views.user_review_list, name='user_review_list'),
     # page for adding wine
     url(r'^wine/add/$', views.wine_add, name='wine_add'),
+    # additional api for adding wine
     url(r'^wine/add/add_wine/$', views.add_wine, name='add_wine'),
+    # grabbing recommendations
     url(r'^recommendations/$', views.recommendation_list, name='recommendation_list'),
 ]
