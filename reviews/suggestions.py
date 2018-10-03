@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from sklearn.cluster import KMeans
 from scipy.sparse import dok_matrix, csr_matrix
 import numpy as np
+import pandas as pd
+from numba import jit
 
 def update_clusters():
 	num_reviews = Review.objects.count()

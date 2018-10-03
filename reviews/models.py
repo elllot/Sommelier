@@ -29,6 +29,12 @@ class Review(models.Model):
 	comment = models.CharField(max_length=200)
 	rating = models.IntegerField(choices=RATING_CHOICES)
 
+	@jit
+	def change_models(self, factor):
+		for model in self.models:
+			self.models[model] *= factor
+
+
 class Cluster(models.Model):
 	name = models.CharField(max_length=100)
 	users = models.ManyToManyField(User)
