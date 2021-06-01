@@ -20,7 +20,7 @@ selenium==3.4.1
 sympy==1.0
 scipy==0.19.1
 scikit-learn==0.19.0
-urllib3==1.21
+urllib3==1.26.5
 w3lib==1.17.0
 dj-database-url==0.4.2
 whitenoise==3.2.1
