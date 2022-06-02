@@ -6,7 +6,7 @@ django-bootstrap3==8.2.2
 django-registration-redux==1.6
 docutils==0.12
 gunicorn==19.7.1
-html5lib==0.9999999
+html5lib==0.99999999
 matplotlib==1.5.3
 mpmath==0.19
 multipledispatch==0.4.8
