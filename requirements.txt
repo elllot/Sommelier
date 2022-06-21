@@ -10,7 +10,7 @@ html5lib==0.9999999
 matplotlib==1.5.3
 mpmath==0.19
 multipledispatch==0.4.8
-numpy==1.13.1
+numpy==1.22.0
 pandas==0.18.1
 Pillow==3.3.1
 psycopg2==2.7.1
